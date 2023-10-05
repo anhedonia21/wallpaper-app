@@ -28,7 +28,7 @@ const RandomPage = () => {
         axios.request({
           timeout:2000,
           method: "GET",
-          url: `https://www.lydrix.com/Wallpapers/brasil/json/brasilWalp${currentFile}.json`
+          url: `robots.txt`
         })
           .then(res => {
             const randomElement = res.data.contents[Math.floor(Math.random() * 10)];
